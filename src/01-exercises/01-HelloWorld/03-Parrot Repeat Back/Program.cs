@@ -18,6 +18,9 @@ namespace _03_Parrot_Repeat_Back
             myVariable = Console.ReadLine();
             Console.Write("Mina ütlen: ");
             Console.WriteLine(myVariable);
+            Console.Write(Environment.NewLine);
+            Console.WriteLine("Press any key to continue..");
+
             Console.ReadLine();
         }
     }

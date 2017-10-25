@@ -30,6 +30,9 @@ namespace _05_number
                 Console.Write("Minu valitud number on suurem");
             }
 
+            Console.Write(Environment.NewLine);
+            Console.WriteLine("Press any key to continue..");
+
             Console.ReadLine();
         }
     }
