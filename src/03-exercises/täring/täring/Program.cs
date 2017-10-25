@@ -14,21 +14,21 @@ namespace täring
             Console.WriteLine("Roll 3d6 2d8");
             Random rnd = new Random();
 
-            Dice dice = new Dice();
+            Dice d6 = new Dice(6);
 
             var total = 0;
 
             for (int i = 0; i < 3; i++)
             {
-                var roll = dice.Roll(6);
+                var roll = d6.Roll();
                 Console.WriteLine($"1d6: { roll }");
                 total += roll;
             }
-
+            Dice d8 = new Dice(8);
             for (int i = 0; i < 2; i++)
             {
-                var roll = dice.Roll(8);
-                Console.WriteLine("1d8: " + roll);
+                var roll = d8.Roll();
+                Console.WriteLine($"1d8: { roll}");
                 total += roll;
             }
 
