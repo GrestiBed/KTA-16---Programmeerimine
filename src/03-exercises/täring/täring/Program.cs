@@ -21,6 +21,10 @@ namespace täring
             {
                 Console.WriteLine($"1{diceRoll.Dice}: {diceRoll.Value}");
             }
+
+            //Console.WriteLine();
+            //Console.WriteLine($"Roll total: { diceRolls.Sum(x => x.Value) }");
+            //Console.WriteLine;
             
             var total = 0;
 

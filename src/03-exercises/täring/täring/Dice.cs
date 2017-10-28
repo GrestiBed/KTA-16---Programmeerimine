@@ -10,7 +10,7 @@ namespace täring
     {
         public string Description { get; }
 
-        private Random Random { get; }
+        private static readonly Random Random = new Random();
 
         private int Sides { get; }
 
@@ -26,6 +26,8 @@ namespace täring
         public int Roll()
         {
             return this.Random.Next(1, this.Sides + 1);
+            //Random rnd = new Random();
+            //var roll = rnd.Next(1, sides);
         }
 
     }
